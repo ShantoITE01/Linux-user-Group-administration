@@ -11,6 +11,7 @@ A user is an individual or entity that can log in and interact with the system. 
 A group is a collection of users. Groups allow system administrators to manage permissions for multiple users efficiently.
 
 🔧 User Management Commands:
+
 ✅ Create a New User:
 
 sudo adduser username
@@ -18,6 +19,7 @@ sudo adduser username
 Or, to create a user without a home directory:
 
 sudo useradd username
+
 ✅ Delete a User:
 
 sudo deluser username
