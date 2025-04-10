@@ -70,3 +70,41 @@ sudo groupadd developers
 Add newuser to developers group:
 
 sudo usermod -aG developers newuser
+
+📁 Important System Files
+
+📄 /etc/passwd — User Information
+
+Contains user account info.
+
+View content:
+
+
+cat /etc/passwd
+Each line format:
+
+username:x:UID:GID:comment:home_directory:shell
+
+Example:
+
+john:x:1001:1001:John Doe:/home/john:/bin/bash
+
+📄 /etc/shadow — Password Info (Encrypted)
+Stores users' encrypted passwords and account expiry info.
+
+View (as root):
+sudo cat /etc/shadow
+
+⚠️ Only accessible by root for security reasons.
+
+📄 /etc/group — Group Information
+
+Lists all groups and group members.
+
+View:
+
+cat /etc/group
+
+Format:
+
+groupname:x:GID:members
